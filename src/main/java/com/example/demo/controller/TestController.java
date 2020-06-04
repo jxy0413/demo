@@ -1,11 +1,7 @@
 package com.example.demo.controller;
 
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
-import com.example.demo.client.Hbaseclient;
-import com.example.demo.client.HttpUtils;
-import com.example.demo.model.User;
 import com.example.demo.service.TestSerivice;
+import com.example.demo.service.mailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,30 +11,50 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 public class TestController {
-    @Autowired
-    private TestSerivice serivice;
-    @GetMapping("/test")
-    public void test(){
-        serivice.test();
-    }
+//    @Autowired
+//    private com.example.demo.service.mailService mailService;
+//    @GetMapping("/mimeMail")
+//    public void mimeMail()throws Exception{
+//        mailService.mimeMail();
+//    }
 
-    @GetMapping("/testinsertUserandzhanghu")
-    public void testinsertUserandzhanghu(){
-        serivice.testinsertUserandzhanghu();
-    }
 
-    @GetMapping("/testinsertDepartment")
-    public void testInsertDepartment(){
-        serivice.testInsertDepartment();
-    }
 
-    @GetMapping("/testinsertEmployee")
-    public void testinsertEmployee(){
-        serivice.insertEmployee();
-    }
+//    @Autowired
+//    private com.example.demo.service.mailService mailService;
 
-    @GetMapping("/testLiushui")
-    public void testinsertLiushui(){
-        serivice.insertLiushui1();
-    }
+//    @GetMapping("/test")
+//    public void test(){
+//        serivice.test();
+//    }
+//
+//    @GetMapping("/testinsertUserandzhanghu")
+//    public void testinsertUserandzhanghu(){
+//        serivice.testinsertUserandzhanghu();
+//    }
+//
+//    @GetMapping("/testinsertDepartment")
+//    public void testInsertDepartment(){
+//        serivice.testInsertDepartment();
+//    }
+//
+//    @GetMapping("/testinsertEmployee")
+//    public void testinsertEmployee(){
+//        serivice.insertEmployee();
+//    }
+//
+//    @GetMapping("/testLiushui")
+//    public void testinsertLiushui(){
+//        serivice.insertLiushui1();
+//    }
+//
+//    @GetMapping("/testMail")
+//    public void testMail(){
+//        mailService.simpleMail();
+//    }
+//
+//    @GetMapping("/mimeMail")
+//    public void mimeMail()throws Exception{
+//        mailService.mimeMail();
+//    }
 }

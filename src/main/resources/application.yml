@@ -1,13 +1,19 @@
 server:
-  port: 10210
+  port: 80
 ---
 server:
-  port: 8087
+  port: 80
 spring:
+  freemarker:
+    charset: UTF-8
+    # 本机测试时建议设置为false，上线时设置为true
+    cache: true
+    # 表示模板文件(类html文件)的后缀
+    suffix: .ftl
   profiles:
     active: dev
   datasource:
-    username: root
+    username: roor
     password: root
     url: jdbc:mysql://101.37.35.14:3306/jxy?useSSL=false
     driver-class-name: com.mysql.jdbc.Driver
